@@ -3,230 +3,257 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Backend-разработчик C# / .NET — портфолио" />
-  <title>Backend Developer · Portfolio</title>
+  <meta name="description" content="Егор Макаров — backend-разработчик (C# / .NET). REST API, PostgreSQL, Docker." />
+  <title>Егор Макаров · Backend</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div class="bg-grid" aria-hidden="true"></div>
-  <div class="glow glow-1" aria-hidden="true"></div>
-  <div class="glow glow-2" aria-hidden="true"></div>
-
   <header class="header" id="top">
-    <nav class="nav container">
-      <a href="#top" class="logo">Портфолио</a>
-      <button class="nav-toggle" aria-label="Меню" aria-expanded="false">
+    <div class="container header__inner">
+      <a class="logo" href="#top">Егор · backend</a>
+      <button class="nav-toggle" type="button" aria-label="Меню" aria-expanded="false" id="navToggle">
         <span></span><span></span><span></span>
       </button>
-      <ul class="nav-links">
-        <li><a href="#about">Обо мне</a></li>
-        <li><a href="#stack">Стек</a></li>
-        <li><a href="#projects">Проекты</a></li>
-        <li><a href="#achievements">Достижения</a></li>
-        <li><a href="#contact" class="nav-cta">Контакты</a></li>
-      </ul>
-    </nav>
+      <nav class="nav" id="nav">
+        <a href="#about">Обо мне</a>
+        <a href="#stack">Стек</a>
+        <a href="#projects">Проекты</a>
+        <a href="#wins">Достижения</a>
+        <a href="#contacts" class="nav-cta">Контакты</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section class="hero container">
-      <div class="hero-badge">Открыт к предложениям</div>
-      <h1 class="hero-title">
-        Backend-разработчик
-        <span class="gradient-text">C# / .NET</span>
-      </h1>
-      <p class="hero-subtitle">
-        Разрабатываю серверные приложения, REST API и работу с базами данных для веб-сервисов
-      </p>
-      <div class="hero-tags">
-        <span>C#</span>
-        <span>.NET Core</span>
-        <span>ASP.NET Core</span>
-        <span>REST API</span>
-        <span>PostgreSQL</span>
-        <span>Docker</span>
-        <span>Git</span>
-      </div>
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">Смотреть проекты</a>
-        <a href="https://github.com/eg0r112" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
-      </div>
-    </section>
-
-    <section id="about" class="section container">
-      <h2 class="section-title"><span class="section-num">01</span> Обо мне</h2>
-      <div class="about-grid">
-        <div class="about-card">
-          <p>Занимаюсь backend-разработкой уже <strong>2 года</strong>. Делаю учебные и некоммерческие проекты: API, CRUD-системы, backend-сервисы с базой данных и авторизацией.</p>
-          <p>Есть опыт некоммерческой разработки для компании <strong>Fun&Sun</strong> — Telegram Mini App и серверная часть для поиска туров.</p>
-        </div>
-        <ul class="about-stats">
-          <li>
-            <span class="stat-value">2+</span>
-            <span class="stat-label">года в backend</span>
-          </li>
-          <li>
-            <span class="stat-value">3</span>
-            <span class="stat-label">ключевых проекта</span>
-          </li>
-          <li>
-            <span class="stat-value">2</span>
-            <span class="stat-label">место на хакатоне</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="stack" class="section container">
-      <h2 class="section-title"><span class="section-num">02</span> Стек технологий</h2>
-      <div class="stack-grid">
-        <article class="stack-card">
-          <h3>Backend</h3>
-          <ul>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__main">
+          <p class="tag">Backend-разработчик · C# / .NET</p>
+          <h1>Егор Макаров</h1>
+          <p class="hero__lead">
+            Разрабатываю серверные приложения и REST API: интеграции с внешними сервисами,
+            авторизация, работа с БД, бизнес-логика и тесты.
+          </p>
+          <ul class="chips" aria-label="Стек">
             <li>C#</li>
-            <li>.NET Core</li>
+            <li>.NET</li>
             <li>ASP.NET Core</li>
-            <li>Entity Framework</li>
             <li>REST API</li>
-          </ul>
-        </article>
-        <article class="stack-card">
-          <h3>Базы данных</h3>
-          <ul>
             <li>PostgreSQL</li>
-          </ul>
-        </article>
-        <article class="stack-card">
-          <h3>Инфраструктура</h3>
-          <ul>
             <li>Docker</li>
             <li>Git</li>
-            <li>Swagger</li>
           </ul>
-        </article>
-        <article class="stack-card">
-          <h3>Подходы</h3>
-          <ul>
-            <li>ООП</li>
-            <li>CRUD</li>
-            <li>Слоистая архитектура</li>
-            <li>Unit-тесты</li>
-          </ul>
-        </article>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projects">К проектам</a>
+            <a class="btn" href="https://github.com/eg0r112" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+        <aside class="hero__aside">
+          <div class="card card--accent">
+            <p class="card__label">Кратко</p>
+            <ul class="list-compact">
+              <li>~2 года в backend (C# / .NET)</li>
+              <li>Лучший backend в проекте «Код» (2 курс) → стажировка 2026</li>
+              <li>2 место на хакатоне, тимлид команды из 5</li>
+              <li>Fun&Sun Mini App (NDA)</li>
+              <li>2 открытых проекта на GitHub</li>
+            </ul>
+          </div>
+        </aside>
       </div>
     </section>
 
-    <section id="projects" class="section container">
-      <h2 class="section-title"><span class="section-num">03</span> Проекты</h2>
-      <div class="projects-list">
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">01</span> Обо мне</h2>
+        <div class="about">
+          <p>Backend-разработчик на C# / .NET. Делаю API и серверную логику для веб-сервисов: от учебных и pet-проектов до некоммерческой разработки под задачи компании.</p>
+          <p>Фокус — не вёрстка, а сервер: проектирование эндпоинтов, интеграции, безопасность, базы данных, Docker. Код открытых проектов — на GitHub; коммерческий проект Fun&Sun — под NDA, без публичных ссылок.</p>
+        </div>
+      </div>
+    </section>
 
-        <article class="project-card project-featured">
-          <div class="project-header">
-            <span class="project-num">01</span>
-            <div>
-              <h3>Fun&Sun Travel Mini App</h3>
-              <p class="project-desc">Backend на ASP.NET Core для Telegram Mini App — поиск и бронирование туров</p>
-            </div>
+    <section class="section section--alt" id="stack">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">02</span> Стек технологий</h2>
+        <div class="stack-grid">
+          <div class="card">
+            <h3>Backend</h3>
+            <p>C#, .NET / .NET Core, ASP.NET Core, Entity Framework Core, REST API</p>
           </div>
-          <ul class="project-done">
-            <li>REST API-прокси к FunSun (поиск туров, города, даты, фильтры)</li>
+          <div class="card">
+            <h3>Базы данных</h3>
+            <p>PostgreSQL</p>
+          </div>
+          <div class="card">
+            <h3>Инструменты</h3>
+            <p>Docker, Git, Swagger</p>
+          </div>
+          <div class="card">
+            <h3>Подходы</h3>
+            <p>ООП, слоистая архитектура, CRUD, JWT и ролевая модель, unit-тесты (xUnit, Moq), базовая архитектура backend-приложений</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">03</span> Проекты</h2>
+        <p class="section__lead">Роль, стек, что сделал и результат — по каждому кейсу.</p>
+
+        <article class="project card">
+          <header class="project__head">
+            <span class="project__num">01</span>
+            <div>
+              <h3>Telegram Mini App Fun&Sun</h3>
+              <span class="badge">некоммерческая разработка</span>
+            </div>
+            <span class="badge badge--nda">NDA</span>
+          </header>
+          <p class="project__summary">Серверная часть Telegram Mini App для поиска туров (интеграция с API Fun&Sun). В открытом доступе не публикуется.</p>
+          <p><strong>Роль:</strong> backend solo — весь backend.</p>
+          <p class="project__stack-label">Стек</p>
+          <ul class="chips chips--sm">
+            <li>C#</li><li>ASP.NET Core</li><li>REST API</li><li>Fun&Sun API</li>
+            <li>Telegram Bot API</li><li>Swagger</li><li>CORS</li><li>Docker</li><li>Git</li>
+          </ul>
+          <p class="project__stack-label">Что сделал</p>
+          <ul class="list">
+            <li>REST API-прокси к Fun&Sun: поиск туров, города, даты, фильтры</li>
+            <li>Единая точка входа — клиент не ходит напрямую во внешний API</li>
             <li>Telegram-бот с кнопкой открытия Mini App</li>
-            <li>Swagger, CORS, Docker</li>
+            <li>Swagger и CORS для разработки и работы мини-аппа</li>
+            <li>Сборка в Docker для развёртывания</li>
           </ul>
-          <div class="project-tags">
-            <span>ASP.NET Core</span>
-            <span>Telegram.Bot</span>
-            <span>Docker</span>
-          </div>
+          <p class="result"><strong>Результат:</strong> рабочий backend для мини-аппа. Демо и репозиторий — по запросу, в рамках NDA.</p>
         </article>
 
-        <article class="project-card">
-          <div class="project-header">
-            <span class="project-num">02</span>
-            <div>
-              <h3>DocArchive API</h3>
-              <p class="project-desc">REST API для хранения документов: публичные и приватные файлы, доступ по ролям</p>
-            </div>
-          </div>
-          <ul class="project-done">
-            <li>JWT + Refresh Token, хеширование паролей</li>
-            <li>Роли User / Manager / Admin, подтверждение Manager через ВК</li>
-            <li>PostgreSQL, EF Core, миграции, Soft Delete</li>
-            <li>Rate Limiter, валидация, логирование, Swagger, Docker</li>
+        <article class="project card">
+          <header class="project__head">
+            <span class="project__num">02</span>
+            <h3>DocArchive API</h3>
+          </header>
+          <p class="project__summary">REST API для хранения и управления документами: публичные и приватные файлы, доступ по ролям.</p>
+          <p><strong>Роль:</strong> backend solo, полный цикл API.</p>
+          <p class="project__stack-label">Стек</p>
+          <ul class="chips chips--sm">
+            <li>C#</li><li>ASP.NET Core</li><li>EF Core</li><li>PostgreSQL</li>
+            <li>JWT + Refresh</li><li>Swagger</li><li>Docker</li><li>Git</li>
           </ul>
-          <div class="project-tags">
-            <span>JWT</span>
-            <span>PostgreSQL</span>
-            <span>EF Core</span>
-          </div>
-          <a href="https://github.com/eg0r112/Day2Vizov3.0" target="_blank" rel="noopener" class="project-link">GitHub →</a>
+          <p class="project__stack-label">Что сделал</p>
+          <ul class="list">
+            <li>API с разделением публичных и приватных документов и проверкой прав</li>
+            <li>JWT + Refresh Token, хеширование паролей, роли User / Manager / Admin</li>
+            <li>Подтверждение роли Manager через ВК</li>
+            <li>PostgreSQL, миграции, Soft Delete, Rate Limiter, валидация, логирование</li>
+            <li>Swagger, Docker, код на GitHub</li>
+          </ul>
+          <p class="result"><strong>Результат:</strong> backend с auth, RBAC и работой с БД — код открыт.</p>
+          <a class="btn btn--sm" href="https://github.com/eg0r112/Day2Vizov3.0" target="_blank" rel="noopener">GitHub ↗</a>
         </article>
 
-        <article class="project-card">
-          <div class="project-header">
-            <span class="project-num">03</span>
+        <article class="project card">
+          <header class="project__head">
+            <span class="project__num">03</span>
             <div>
               <h3>FastFood Order Service</h3>
-              <p class="project-desc">Сервис заказов: скидки, доставка, проверка бизнес-правил</p>
+              <span class="badge">учебный</span>
             </div>
-          </div>
-          <ul class="project-done">
-            <li>Слои: Models, Services, Interfaces, DTO</li>
-            <li>OrderService и PricingService с бизнес-логикой</li>
-            <li>Unit-тесты на xUnit + Moq</li>
+          </header>
+          <p class="project__summary">Сервис заказов для сети фастфуда: оформление, скидки, доставка, бизнес-правила.</p>
+          <p><strong>Роль:</strong> backend solo.</p>
+          <p class="project__stack-label">Стек</p>
+          <ul class="chips chips--sm">
+            <li>C#</li><li>.NET</li><li>Models / Services / DTO</li><li>xUnit</li><li>Moq</li><li>Git</li>
           </ul>
-          <div class="project-tags">
-            <span>C#</span>
-            <span>xUnit</span>
-            <span>Moq</span>
-          </div>
-          <a href="https://github.com/eg0r112/Day3Vizov3.0" target="_blank" rel="noopener" class="project-link">GitHub →</a>
+          <p class="project__stack-label">Что сделал</p>
+          <ul class="list">
+            <li>Слоистая архитектура (Models, Services, Interfaces, DTO)</li>
+            <li>OrderService: заказы и бизнес-правила (лимиты, допустимость)</li>
+            <li>PricingService: скидки, доставка, итоговая стоимость</li>
+            <li>Unit-тесты на ключевую логику (xUnit + Moq)</li>
+            <li>Код на GitHub</li>
+          </ul>
+          <p class="result"><strong>Результат:</strong> учебный проект с бизнес-логикой и тестами.</p>
+          <a class="btn btn--sm" href="https://github.com/eg0r112/Day3Vizov3.0" target="_blank" rel="noopener">GitHub ↗</a>
         </article>
-
       </div>
     </section>
 
-    <section id="achievements" class="section container">
-      <h2 class="section-title"><span class="section-num">04</span> Достижения</h2>
-      <article class="achievement-card">
-        <div class="achievement-icon">🏆</div>
-        <div>
-          <h3>2 место — хакатон «Стажировка 2026»</h3>
-          <p>Проект <strong>Код и Пазл</strong>, организатор — НОВЫЕ ЛЮДИ</p>
-        </div>
-      </article>
+    <section class="section section--alt" id="wins">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">04</span> Достижения</h2>
+
+        <article class="win card">
+          <span class="win__num">01</span>
+          <div>
+            <h3>Проект «Код» · 2 курс</h3>
+            <p class="win__subtitle">Лучший студент backend-направления</p>
+            <p>Лучший студент backend-направления в учебном проекте «Код» на 2 курсе.</p>
+            <p>По итогам обучения отобран на стажировку «Стажировка 2026» от «Код и Пазл». Хакатон проходил на стажировке — попал туда как отобранный участник.</p>
+          </div>
+        </article>
+
+        <article class="win card">
+          <span class="win__num">02</span>
+          <div>
+            <h3>Хакатон «Стажировка 2026» · 2 место</h3>
+            <p class="win__subtitle">Тимлид · backend · команда 5 человек</p>
+            <p>Веб-сервис для сдачи домашних заданий (платформа «Код и Пазл»).</p>
+            <p><strong>Роль:</strong> тимлид, проектировал и писал backend, координировал задачи.</p>
+            <p class="project__stack-label">Стек (backend)</p>
+            <ul class="chips chips--sm">
+              <li>C#</li><li>ASP.NET Core</li><li>REST API</li><li>PostgreSQL</li><li>EF Core</li><li>Git</li>
+            </ul>
+            <p class="project__stack-label">Что сделал</p>
+            <ul class="list">
+              <li>Распределение задач в команде, ведение backend</li>
+              <li>Backend веб-сервиса сдачи домашних заданий</li>
+              <li>API для веб-приложения по ТЗ хакатона</li>
+              <li>Репозиторий backend, рабочая версия на ветке <code>develop</code></li>
+            </ul>
+            <p class="result"><strong>Результат:</strong> 2 место. Командный продукт за срок хакатона.</p>
+            <a class="btn btn--sm" href="https://gitlab.kam-dev.ru/hackathon-2026/team-2/backend" target="_blank" rel="noopener">Backend (develop) ↗</a>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section id="contact" class="section container">
-      <h2 class="section-title"><span class="section-num">05</span> Контакты</h2>
-      <div class="contact-grid">
-        <a href="tel:+79102075979" class="contact-card">
-          <span class="contact-label">Телефон</span>
-          <span class="contact-value">+7 (910) 207-59-79</span>
-        </a>
-        <a href="https://t.me/Marix929" target="_blank" rel="noopener" class="contact-card">
-          <span class="contact-label">Telegram</span>
-          <span class="contact-value">@Marix929</span>
-        </a>
-        <a href="mailto:vedromakaron@gmail.com" class="contact-card">
-          <span class="contact-label">Email</span>
-          <span class="contact-value">vedromakaron@gmail.com</span>
-        </a>
-        <a href="https://github.com/eg0r112" target="_blank" rel="noopener" class="contact-card">
-          <span class="contact-label">GitHub</span>
-          <span class="contact-value">eg0r112</span>
-        </a>
+    <section class="section" id="contacts">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">05</span> Контакты</h2>
+        <div class="contacts">
+          <a class="card contact" href="tel:+79102075979">
+            <span class="contact__label">Телефон</span>
+            <span class="contact__value">+7 (910) 207-59-79</span>
+          </a>
+          <a class="card contact" href="https://t.me/Marix929" target="_blank" rel="noopener">
+            <span class="contact__label">Telegram</span>
+            <span class="contact__value">@Marix929</span>
+          </a>
+          <a class="card contact" href="mailto:vedromakaron@gmail.com">
+            <span class="contact__label">Email</span>
+            <span class="contact__value">vedromakaron@gmail.com</span>
+          </a>
+          <a class="card contact" href="https://github.com/eg0r112" target="_blank" rel="noopener">
+            <span class="contact__label">GitHub</span>
+            <span class="contact__value">eg0r112</span>
+          </a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer container">
-    <p>© 2026 · Backend Developer Portfolio</p>
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> · Егор Макаров · Backend-разработчик</p>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
