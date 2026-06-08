@@ -66,20 +66,16 @@
           <p>Флагманский pet-проект — <strong>IRP</strong> (Incident Response Platform): алерты → инциденты → outbox → RabbitMQ → уведомления в Telegram и Jira, on-call бот, admin-панель, OpenTelemetry.</p>
           <p>Некоммерческий опыт для <strong>Fun&Sun</strong> — backend и Telegram Mini App для поиска туров. Пишу unit- и integration-тесты, работаю со Swagger и GitHub Actions.</p>
         </div>
-        <ul class="about-stats">
-          <li>
-            <span class="stat-value">2+</span>
-            <span class="stat-label">года в backend</span>
-          </li>
-          <li>
-            <span class="stat-value">3</span>
-            <span class="stat-label">ключевых проекта</span>
-          </li>
-          <li>
-            <span class="stat-value">2</span>
-            <span class="stat-label">место на хакатоне</span>
-          </li>
-        </ul>
+        <div class="about-card">
+          <p><strong>Кратко</strong></p>
+          <ul class="project-done">
+            <li>~2 года в backend (C# / .NET)</li>
+            <li>Лучший backend в проекте «Код» (2 курс) → стажировка 2026</li>
+            <li>2 место на хакатоне, тимлид команды из 5</li>
+            <li>Fun&Sun Mini App (NDA)</li>
+            <li>2 открытых проекта на GitHub</li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -259,13 +255,53 @@
 
     <section id="achievements" class="section container">
       <h2 class="section-title"><span class="section-num">04</span> Достижения</h2>
-      <article class="achievement-card">
-        <div class="achievement-icon">🏆</div>
-        <div>
-          <h3>2 место — хакатон «Стажировка 2026»</h3>
-          <p>Проект <strong>Код и Пазл</strong>, организатор — НОВЫЕ ЛЮДИ</p>
-        </div>
-      </article>
+      <div class="projects-list">
+
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-num">01</span>
+            <div>
+              <h3>Проект «Код» · 2 курс</h3>
+              <p class="project-desc">Лучший студент backend-направления</p>
+            </div>
+          </div>
+          <ul class="project-done">
+            <li>Лучший студент backend-направления в учебном проекте «Код» на 2 курсе.</li>
+            <li>По итогам обучения отобран на стажировку «Стажировка 2026» от «Код и Пазл». Хакатон проходил на стажировке — попал туда как отобранный участник.</li>
+          </ul>
+        </article>
+
+        <article class="project-card project-featured">
+          <div class="project-header">
+            <span class="project-num">02</span>
+            <div>
+              <h3>Хакатон «Стажировка 2026» · 2 место</h3>
+              <p class="project-desc">Тимлид · backend · команда 5 человек</p>
+            </div>
+          </div>
+          <p class="project-desc">Веб-сервис для сдачи домашних заданий (платформа «Код и Пазл»).</p>
+          <p class="project-desc"><strong>Роль:</strong> тимлид, проектировал и писал backend, координировал задачи.</p>
+          <p class="project-desc"><strong>Стек (backend)</strong></p>
+          <div class="project-tags">
+            <span>C#</span>
+            <span>ASP.NET Core</span>
+            <span>REST API</span>
+            <span>PostgreSQL</span>
+            <span>EF Core</span>
+            <span>Git</span>
+          </div>
+          <p class="project-desc"><strong>Что сделал</strong></p>
+          <ul class="project-done">
+            <li>Распределение задач в команде, ведение backend</li>
+            <li>Backend веб-сервиса сдачи домашних заданий</li>
+            <li>API для веб-приложения по ТЗ хакатона</li>
+            <li>Репозиторий backend, рабочая версия на ветке develop</li>
+          </ul>
+          <p class="project-desc"><strong>Результат:</strong> 2 место. Командный продукт за срок хакатона.</p>
+          <a href="https://github.com/eg0r112/Hakaton_2026" target="_blank" rel="noopener" class="project-link">Backend (develop) →</a>
+        </article>
+
+      </div>
     </section>
 
     <section id="contact" class="section container">
