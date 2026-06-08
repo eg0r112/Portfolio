@@ -168,6 +168,36 @@ main { position: relative; z-index: 1; }
   padding-bottom: 4rem;
 }
 
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr minmax(240px, 300px);
+  gap: 2rem;
+  align-items: start;
+  width: 100%;
+}
+
+.hero-main {
+  min-width: 0;
+}
+
+.hero-aside {
+  position: sticky;
+  top: calc(var(--header-h) + 1rem);
+}
+
+.hero-brief {
+  border-color: rgba(251, 191, 36, 0.25);
+  background: linear-gradient(135deg, var(--bg-card), rgba(251, 191, 36, 0.04));
+}
+
+.hero-brief .project-done {
+  margin-bottom: 0;
+}
+
+.hero-brief .project-done li {
+  font-size: 0.85rem;
+}
+
 .hero-badge {
   display: inline-flex;
   align-items: center;
@@ -631,6 +661,14 @@ main { position: relative; z-index: 1; }
 
   .nav-toggle.open span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-aside {
+    position: static;
   }
 
   .about-grid {
