@@ -43,12 +43,12 @@
       </p>
       <div class="hero-tags">
         <span>C#</span>
-        <span>.NET 9</span>
+        <span>.NET Core</span>
         <span>ASP.NET Core</span>
+        <span>REST API</span>
         <span>PostgreSQL</span>
-        <span>Redis</span>
-        <span>RabbitMQ</span>
         <span>Docker</span>
+        <span>Git</span>
       </div>
       <div class="hero-actions">
         <a href="#projects" class="btn btn-primary">Смотреть проекты</a>
@@ -60,8 +60,8 @@
       <h2 class="section-title"><span class="section-num">01</span> Обо мне</h2>
       <div class="about-grid">
         <div class="about-card">
-          <p>Занимаюсь backend-разработкой уже <strong>2 года</strong>. Делаю учебные и pet-проекты: REST API, работа с БД, очередями, авторизацией и интеграциями.</p>
-          <p>Есть опыт некоммерческой разработки для компании <strong>Fun&Sun</strong> — Telegram Mini App и серверная часть для поиска туров. Pet-проект <strong>IRP</strong> — платформа реагирования на инциденты (алерты, outbox, on-call в Telegram).</p>
+          <p>Занимаюсь backend-разработкой уже <strong>2 года</strong>. Делаю учебные и некоммерческие проекты: API, CRUD-системы, backend-сервисы с базой данных и авторизацией.</p>
+          <p>Есть опыт некоммерческой разработки для компании <strong>Fun&Sun</strong> — Telegram Mini App и серверная часть для поиска туров.</p>
         </div>
         <ul class="about-stats">
           <li>
@@ -92,6 +92,7 @@
             <li>Entity Framework Core</li>
             <li>MediatR</li>
             <li>FluentValidation</li>
+            <li>AutoMapper</li>
             <li>REST API</li>
           </ul>
         </article>
@@ -108,18 +109,23 @@
             <li>Docker</li>
             <li>RabbitMQ</li>
             <li>MassTransit</li>
-            <li>Git / GitHub Actions</li>
+            <li>Git</li>
+            <li>GitHub Actions</li>
             <li>Swagger</li>
+            <li>Serilog</li>
+            <li>OpenTelemetry</li>
             <li>Prometheus / Grafana</li>
           </ul>
         </article>
         <article class="stack-card">
           <h3>Подходы</h3>
           <ul>
-            <li>Modular Monolith</li>
+            <li>ООП</li>
+            <li>Слоистая архитектура</li>
             <li>Outbox Pattern</li>
             <li>JWT + RBAC</li>
             <li>Unit / Integration тесты</li>
+            <li>xUnit · Testcontainers</li>
           </ul>
         </article>
       </div>
@@ -132,6 +138,32 @@
         <article class="project-card project-featured">
           <div class="project-header">
             <span class="project-num">01</span>
+            <div>
+              <h3>IRP — Incident Response Platform</h3>
+              <p class="project-desc">Платформа реагирования на инциденты: мониторинг шлёт алерт → инцидент → уведомление дежурному в Telegram</p>
+            </div>
+          </div>
+          <ul class="project-done">
+            <li>REST API v1/v2, JWT + API Key, RBAC, Swagger, optimistic concurrency</li>
+            <li>PostgreSQL + EF Core, Outbox + RabbitMQ, Redis dedup/idempotency</li>
+            <li>Telegram-бот для on-call: список инцидентов, ack/resolve, push</li>
+            <li>Интеграция с Jira, admin-панель, Docker Compose, OpenTelemetry</li>
+            <li>xUnit, Testcontainers, GitHub Actions CI</li>
+          </ul>
+          <div class="project-tags">
+            <span>.NET 9</span>
+            <span>MediatR</span>
+            <span>RabbitMQ</span>
+            <span>Redis</span>
+            <span>Telegram</span>
+            <span>Jira</span>
+          </div>
+          <a href="https://github.com/eg0r112/IRP_pet_proj" target="_blank" rel="noopener" class="project-link">GitHub →</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-num">02</span>
             <div>
               <h3>Fun&Sun Travel Mini App</h3>
               <p class="project-desc">Backend на ASP.NET Core для Telegram Mini App — поиск и бронирование туров</p>
@@ -151,7 +183,7 @@
 
         <article class="project-card">
           <div class="project-header">
-            <span class="project-num">02</span>
+            <span class="project-num">03</span>
             <div>
               <h3>DocArchive API</h3>
               <p class="project-desc">REST API для хранения документов: публичные и приватные файлы, доступ по ролям</p>
@@ -169,30 +201,6 @@
             <span>EF Core</span>
           </div>
           <a href="https://github.com/eg0r112/Day2Vizov3.0" target="_blank" rel="noopener" class="project-link">GitHub →</a>
-        </article>
-
-        <article class="project-card">
-          <div class="project-header">
-            <span class="project-num">03</span>
-            <div>
-              <h3>IRP — Incident Response Platform</h3>
-              <p class="project-desc">Платформа реагирования на инциденты: мониторинг шлёт алерт → инцидент → уведомление дежурному в Telegram</p>
-            </div>
-          </div>
-          <ul class="project-done">
-            <li>REST API v1/v2, JWT + API Key, RBAC, Swagger, optimistic concurrency</li>
-            <li>PostgreSQL + EF Core, Outbox + RabbitMQ, Redis dedup/idempotency</li>
-            <li>Telegram-бот для on-call: список инцидентов, ack/resolve, push</li>
-            <li>Интеграция с Jira, admin-панель, Docker Compose, OpenTelemetry</li>
-            <li>xUnit, Testcontainers, GitHub Actions CI</li>
-          </ul>
-          <div class="project-tags">
-            <span>.NET 9</span>
-            <span>RabbitMQ</span>
-            <span>Redis</span>
-            <span>Telegram</span>
-          </div>
-          <a href="https://github.com/eg0r112/IRP_pet_proj" target="_blank" rel="noopener" class="project-link">GitHub →</a>
         </article>
 
       </div>
