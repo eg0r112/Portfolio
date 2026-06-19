@@ -79,6 +79,7 @@
       <div class="about-card">
         <p>Занимаюсь backend-разработкой уже <strong>2 года</strong>. Собираю сервисы целиком: REST API, PostgreSQL, фоновые воркеры, очереди, кэш, JWT/RBAC, интеграции с внешними системами, Docker и CI.</p>
         <p>Флагманский pet-проект — <strong>IRP</strong> (Incident Response Platform): алерты → инциденты → outbox → RabbitMQ → уведомления в Telegram и Jira, on-call бот, admin-панель, OpenTelemetry.</p>
+        <p>Pet-проект <strong>Team Availability Scheduler</strong>: команды → отпуска и отсутствия → расчёт «кто доступен» → on-call смены → outbox → Telegram-бот (/status, /working, /away) и Jira-тикет при дежурстве, Web UI, integration tests.</p>
         <p>Некоммерческий опыт для <strong>Fun&Sun</strong> — backend и Telegram Mini App для поиска туров. Пишу unit- и integration-тесты, работаю со Swagger и GitHub Actions.</p>
       </div>
     </section>
@@ -216,6 +217,32 @@
           <div class="project-header">
             <span class="project-num">02</span>
             <div>
+              <h3>Team Availability Scheduler</h3>
+              <p class="project-desc">Backend для учёта доступности команд: отпуска, on-call, расчёт «кто доступен сейчас», Web UI</p>
+            </div>
+          </div>
+          <ul class="project-done">
+            <li>CQRS (MediatR), FluentValidation, Clean Architecture в одном .csproj</li>
+            <li>Команды, отсутствия, on-call смены, кэш availability (Redis / in-memory)</li>
+            <li>Telegram-бот (/status, /working, /away), Jira-тикет при назначении on-call</li>
+            <li>Outbox, idempotency, PostgreSQL + EF Core, Docker Compose, integration tests</li>
+          </ul>
+          <div class="project-tags">
+            <span>.NET 9</span>
+            <span>MediatR</span>
+            <span>EF Core</span>
+            <span>PostgreSQL</span>
+            <span>Telegram</span>
+            <span>Jira</span>
+            <span>Docker</span>
+          </div>
+          <a href="https://github.com/eg0r112/Team-Availability-PET" target="_blank" rel="noopener" class="project-link">GitHub →</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-num">03</span>
+            <div>
               <h3>Fun&Sun Travel Mini App</h3>
               <p class="project-desc">Backend на ASP.NET Core для Telegram Mini App — поиск и бронирование туров</p>
             </div>
@@ -230,28 +257,6 @@
             <span>Telegram.Bot</span>
             <span>Docker</span>
           </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-header">
-            <span class="project-num">03</span>
-            <div>
-              <h3>DocArchive API</h3>
-              <p class="project-desc">REST API для хранения документов: публичные и приватные файлы, доступ по ролям</p>
-            </div>
-          </div>
-          <ul class="project-done">
-            <li>JWT + Refresh Token, хеширование паролей</li>
-            <li>Роли User / Manager / Admin, подтверждение Manager через ВК</li>
-            <li>PostgreSQL, EF Core, миграции, Soft Delete</li>
-            <li>Rate Limiter, валидация, логирование, Swagger, Docker</li>
-          </ul>
-          <div class="project-tags">
-            <span>JWT</span>
-            <span>PostgreSQL</span>
-            <span>EF Core</span>
-          </div>
-          <a href="https://github.com/eg0r112/Day2Vizov3.0" target="_blank" rel="noopener" class="project-link">GitHub →</a>
         </article>
 
       </div>
